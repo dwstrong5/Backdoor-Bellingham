@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Backdoor Bellingham | Backpacking</title>
+    <link rel="stylesheet" href="CSS/backpack.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header>
+            <div class="logo">Backpacking</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Citylife.html">City Life</a></li>
+                    <li><a href="Hikes.html">Hikes</a></li>
+                    <li><a href="calendar.html">Activities</a>
+                    <ul>
+                        <li><a href="biking.html">Biking</a></li>
+                        <li><a href="water.html">Water Sports</a></li>
+                        <li><a href="skiing.html">Skiing</a></li>
+                        <li><a href="climbing.html">Climbing</a></li>
+                        <li><a href="backpack.html">BackPacking</a></li>
+                    </ul> 
+                </li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+    </header>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img id="slides" src="Images/picture4.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img id="slides" src="Images/picture2.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img id="slides" src="Images/picture3.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img id="slides" src="Images/picture5.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+<div id="info1">
+  <br>
+  <p>
+    Around the Bellingham area there are several locations to hike at.
+    Some of these trails allow you to camp overnight at a designated spot.
+  </p>
+</div>
+<div id="info1">
+  <ul>
+    <h3>Locations:</h3>
+    <br>
+    <li class="title">North Cascades</li>
+      <ul>
+        <li>About an hour from campus and makes for incredible trips. Where most backpacking near bellingham would be.</li>
+      </ul>
+    <li class="title">Olympic National Park</li>
+    <ul>
+      <li>Out on the Olympic Penisula.</li>
+    </ul>  
+    <li class="title">Other Backpacking locations</li>
+    <ul>
+      <li>There are quite a few trails in Canada where you can backpack. The closest only being 2 hours away!</li>
+    </ul>
+  
+</ul>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+
+<footer>
+ 
+
+</footer>   
+</html> 

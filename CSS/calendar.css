@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    background-color: #fff;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    height: 100vh;
+    background-image: url(../Images/CalendarBack.JPG);
+    Width: 100%;
+    background-position:relative;
+    background-size:cover;
+    margin:auto;
+}
+
+table, th, tr, td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+
+table {
+    background-color: #fffdd0;
+    box-shadow: 0 10px 60px rgba(0,0,0,0.9);
+    text-align: center;
+    margin:auto;
+}
+
+th, tr, td {
+    padding: 20px;
+}
+
+caption {
+    background-color: rgba(255,128,80,0.8);
+    padding: 1em;
+    color: white;
+    font-size:40px;
+}
+
+td.music, td.social, td.active, td:hover {
+    color: white;
+    background-color: rgba(255,127,80,0.75);
+    cursor: pointer;
+}
+
+td.social {
+    background-color:rgba(0,128,80,0.4);
+}
+
+td.music {
+    background-color: rgba(128,128,128, 0.4)
+}
+
+td:hover {
+    background-color: coral;
+}
+
+td a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+header{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    text-align: center;
+    position: absolute;
+    border-bottom: 1px solid coral;
+    background-color: black;
+    padding: 35px;
+    z-index: 1;
+}
+
+main{
+    width:80%;
+    margin: auto;
+}
+
+.logo{
+    font-size: 35px;
+    float: left;
+    color:#fff;
+    text-emphasis: bold;
+   font-weight: 300;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+nav ul{
+    list-style-type: none;
+    float:right;
+
+}
+nav ul li{
+    display: inline-block;
+    position: relative;
+}
+nav ul li ul{
+    position: absolute;
+    display: none;
+    max-width: 50%;
+}
+
+nav ul li:hover ul{
+    display:block;
+}
+
+nav ul li ul li a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-emphasis: bold; 
+}
+nav a {
+    padding: 5px 20px;
+    display: inline-block;
+    text-decoration: none;
+    color:black;
+    text-emphasis: bold;
+    background-color: #fff;
+    border: .5px outset #fff; 
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+label {
+    Color: black;
+    font-weight: bold;
+    float: left;
+    display: block;
+    width: 8em;
+    padding-right:1em;
+}
+
+input {
+    display:block;
+    margin-bottom: 1em;
+}
+
+textarea {
+    display:block;
+    margin-bottom: 1em;
+}
+
+#mySubmit {
+    margin-left:10em;
+}
+
+.form {
+    background-color: #fffdd0;
+    width:35%;
+    border-bottom: 1px solid grey;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 1em;
+    margin:auto;
+}
+
+.formhead {
+    background-color: coral;
+    width:35%;
+    border-bottom: 1px solid grey;
+    text-align:center;
+    padding-top:1px;
+    margin:auto;
+}
+
+dl {
+    width:74%;
+    background:#fffdd0;
+    border: 1px solid coral;
+    margin:auto;
+    padding: 5px;
+    text-align:center;
+}
+
+.orng {
+    color: coral;
+}
+
+.grn {
+    color: green
+}
+
+.gry {
+    color: gray
+}
+
+dt, dd {
+    display: inline;
+    padding:2px;
+}
+
+footer{
+    background-color:black;
+    color: #fff;
+    text-align: center;
+    padding: .5em;
+}
+
+
+nav :hover {
+    color: coral;
+}

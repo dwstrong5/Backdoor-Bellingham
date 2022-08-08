@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    
+}
+
+Header{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    text-align: center;
+    position: absolute;
+    border-bottom: 1px solid coral;
+    background-color: black;
+    padding: 35px;
+    z-index: 1;
+    
+}
+
+.logo{
+    font-size: 35px;
+    float: left;
+    color:#fff;
+    text-emphasis: bold;
+   font-weight: 300;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav ul{
+    list-style-type: none;
+    float:right;
+
+}
+nav ul li{
+    display: inline-block;
+    position: relative;
+}
+nav ul li ul{
+    position: absolute;
+    display: none;
+    max-width: 50%;
+
+   
+}
+nav ul li:hover ul{
+    display:block;
+}
+
+nav ul li ul li a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-emphasis: bold;
+    
+    
+}
+nav a {
+    padding: 5px 20px;
+    display: inline-block;
+    text-decoration: none;
+    color:black;
+    text-emphasis: bold;
+    background-color: #fff;
+    border: .5px outset #fff;
+    
+    
+}
+
+.show{background-image: url(../Images/climb1.jpg);
+    /* units - cm, px, %, em, rem, vh, wh*/
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+position: relative
+
+}
+.show-items{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align:center ;
+}
+
+.show-items h2{
+    color: white;
+    background-color:coral;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 5px outset #fff;
+    
+}
+
+.show-items p{
+    color: black;
+    margin-bottom: 50px;
+    
+}
+
+.button{
+text-decoration: none;
+border: 1px solid #fff;
+color:#fff;
+background-color: black;
+padding: 10px 30px;
+border-radius: 2em;
+}
+
+.button:hover{
+    background-color: coral;
+}
+
+main{
+
+    width: 80%;
+    margin: 30px;
+}
+
+.box{
+    width: 70%;
+    float: left;
+
+}
+
+.clearfix{
+    clear:both;
+}
+
+.box img{
+    width: 200px;
+    margin: 20px;
+}
+
+
+nav :hover {
+    color: coral;
+}
+
+footer{
+    background-color:black;
+    color:#fff;
+    text-align: center;
+}
+
+.Hike{background-image: url(/images/IMG_7830.jpg);
+    /* units - cm, px, %, em, rem, vh, wh*/
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+position: relative
+
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+   justify-content: center; 
+font-size: medium;
+   padding: 1em;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   padding-left: 5em;
+  
+  
+  }
+
+ 
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+     
+  }
+
+
+  img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 300px;
+    
+  }
+
+
+  p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    justify-content: center;
+    font-size: large;
+   margin: auto;
+  margin-left: auto;
+}
+
+ul{
+    
+list-style-position: outside;
+display: inline-block; 
+ padding-left: 2em;
+ font-size: large;
+}
+
+h2{
+    text-align: center;
+    font-size: x-large;
+}
